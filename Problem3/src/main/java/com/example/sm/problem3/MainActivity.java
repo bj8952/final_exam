@@ -70,7 +70,7 @@ class Customer extends Person{
         this.name = name;
     }
 
-    // need something here
+    void work(){};// need something here
 }
 
 
@@ -94,4 +94,10 @@ class Manager extends Person{
 }
 
 // need something here
+
+
+
+
+
+
 

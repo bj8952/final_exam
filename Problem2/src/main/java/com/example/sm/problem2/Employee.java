@@ -4,7 +4,7 @@ package com.example.sm.problem2;
 //public class Employee /* extends something1 implements something2 */ {
 public class Employee extends Person implements Payment{
 
-    private int salary;
+    public int salary =0 ;
 
     public Employee(String name, int age, int salary) {
         super(name, age);
@@ -19,5 +19,17 @@ public class Employee extends Person implements Payment{
         this.salary = salary;
     }
 
+    @Override
+    public void increase() { // ++++++++++
+       salary =  salary + 10000;
+
+    }
+
+    @Override
+    public void decrease() { //++++++++
+        salary = salary - 10000;
+    }
+
     // need something here
 }
+
